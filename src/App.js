@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 //import libraries here
@@ -17,7 +16,7 @@ function App() {
     axios.get(URL)
     .then((response) => {
       console.log(response.data)
-      setMessage(response..data.message)
+      setMessage(response.data.message)
     }).catch(error =>{
       setMessage(error)
     })
